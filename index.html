@@ -94,6 +94,11 @@ overflow: hidden;
 
 </style>
 <script>
+var mob= HtmlService.getUserAgent();
+  if (mob.indexOf('Mobi') < 0){
+  window.location.href='/desktop.html';
+  }
+	
 alert("Click the pictures to add to the CCounter! Click on the number to Reset.");
 
 var count= 0000;
